@@ -1,6 +1,6 @@
 # 写作与研究 Skill 工具包
 
-这套工具包包含 10 个 Agent Skills。把所需 Skill 的完整目录复制到目标 Harness 的技能目录即可安装。项目级安装会随当前项目使用，用户级安装供本机多个项目共用。路径里的 `~` 指用户目录，Windows 上通常是 `C:\Users\你的用户名`。各工具的发现规则见 [Agent Skills 规范](https://agentskills.io/specification) 和下表的官方文档。
+这套工具包包含 11 个 Agent Skills。把所需 Skill 的完整目录复制到目标 Harness 的技能目录即可安装。项目级安装会随当前项目使用，用户级安装供本机多个项目共用。路径里的 `~` 指用户目录，Windows 上通常是 `C:\Users\你的用户名`。各工具的发现规则见 [Agent Skills 规范](https://agentskills.io/specification) 和下表的官方文档。
 
 | Harness | 项目级目录 | 用户级目录 | 官方文档 |
 |---|---|---|---|
@@ -39,6 +39,7 @@ python install.py --dry-run --dest "$HOME/.cursor/skills" paper-details
 |---|---|---|
 | `humanizer-zh` | 中文润色，保留事实和语气 | 纯文本即可使用 |
 | `anti-defensive-writing` | 论文叙事、摘要、引言和审稿回复 | 用已有证据支撑论点 |
+| `chinese-academic-writing` | 中文论文、摘要、逐章修订与交付核查 | 按[写作规则 9.0 社会科学适用版](skills/chinese-academic-writing/references/writing-rules-9.md)执行。项目专用要求由作者提供 |
 | `literature-synthesis-guide` | 从已有资料提炼证据表和叙述性综述 | 点名调用并提供文献材料 |
 | `master-thesis-studio-skill` | 中文硕士论文组织、写作与 Word 输出 | 点名调用。生成 Word 需要 Python 和 `lxml`。可使用随包的上游示例模板，或用 `--template` 传入自己的 `.docx` 或 `.dotx` 模板 |
 | `explain` | 写概念或系统说明 | Mermaid 图取决于目标 Harness 或阅读器 |
